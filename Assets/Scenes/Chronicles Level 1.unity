@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerWall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,10 +218,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerWall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.74
+      value: 4.331
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -226,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.43
+      value: -5.72
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -271,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.640625
+      value: 1.8231602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a0f199b72a3649478b08a7a9274d958, type: 3}
@@ -292,6 +302,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -379,6 +394,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExternalWall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317144747782882838, guid: 38c822e809a9dfd47bf71cb9c09d7670,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4317144747782882842, guid: 38c822e809a9dfd47bf71cb9c09d7670,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -452,6 +472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -530,6 +555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400441803}
+  - component: {fileID: 400441804}
   m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
@@ -551,6 +577,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400441804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400441802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 2560
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 36bb057248e798649acfaa7e8b0f235f, type: 2}
 --- !u!1001 &521136014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,6 +617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -644,7 +704,9 @@ GameObject:
   - component: {fileID: 624867377}
   - component: {fileID: 624867376}
   - component: {fileID: 624867375}
-  m_Layer: 0
+  - component: {fileID: 624867380}
+  - component: {fileID: 624867379}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,12 +782,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624867374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.466, y: 0.25, z: -8.427}
+  m_LocalPosition: {x: -7.66, y: 0.25, z: -7.93}
   m_LocalScale: {x: 0.5, y: 0.25, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624867379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624867374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae9af8699904d64b8a92e7d00f2439b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1624296727}
+  playerAgent: {fileID: 624867380}
+--- !u!195 &624867380
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624867374}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5000001
+  m_Speed: 8
+  m_Acceleration: 15
+  avoidancePriority: 50
+  m_AngularSpeed: 180
+  m_StoppingDistance: 0.1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &643787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +833,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643787964}
-  m_Layer: 0
+  - component: {fileID: 643787965}
+  m_Layer: 11
   m_Name: InnerWallGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,6 +867,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643787965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643787963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &670048993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -779,6 +894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ExternalWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317144747782882838, guid: 38c822e809a9dfd47bf71cb9c09d7670,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4317144747782882842, guid: 38c822e809a9dfd47bf71cb9c09d7670,
         type: 3}
@@ -851,7 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 670732472}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ExternalWallGrouping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +1008,7 @@ GameObject:
   - component: {fileID: 710319239}
   - component: {fileID: 710319238}
   - component: {fileID: 710319237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,6 +1102,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerWall (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -995,7 +1120,7 @@ PrefabInstance:
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9288102
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -1061,6 +1186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -1240,6 +1370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExternalWall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4317144747782882838, guid: 38c822e809a9dfd47bf71cb9c09d7670,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4317144747782882842, guid: 38c822e809a9dfd47bf71cb9c09d7670,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1308,6 +1443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWideColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125565045988065315, guid: ec96d1b0807c6e04b839344efc431497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5125565045988065318, guid: ec96d1b0807c6e04b839344efc431497,
         type: 3}
@@ -1483,6 +1623,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerWall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1563,10 +1708,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerWall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.789987
+      value: 6.98
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -1576,7 +1726,7 @@ PrefabInstance:
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7888103
+      value: -3.45
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -1642,6 +1792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
@@ -1723,6 +1878,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExternalWall
       objectReference: {fileID: 0}
+    - target: {fileID: 4317144747782882838, guid: 38c822e809a9dfd47bf71cb9c09d7670,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4317144747782882842, guid: 38c822e809a9dfd47bf71cb9c09d7670,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1796,6 +1956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495215515850633787, guid: 9a0f199b72a3649478b08a7a9274d958,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4495215515850633790, guid: 9a0f199b72a3649478b08a7a9274d958,
         type: 3}
