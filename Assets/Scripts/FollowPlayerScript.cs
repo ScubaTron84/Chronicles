@@ -1,22 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
+        /// <summary>
+        /// The point of htis class is to trigger enemy objects to follow the player.
+        /// </summary>
 public class FollowPlayerScript : MonoBehaviour
 {
-    public Transform playerTransform;
-    public Vector3 cameraOffset;
+    public Transform player;
+    public NavMeshAgent enemyAgent;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Set start camera offset
-        cameraOffset = new Vector3(0f, 1.5f, -4.8f);
+        player = GameObject.Find("Player").transform;
+        enemyAgent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = playerTransform.position + cameraOffset;
+        enemyAgent.SetDestination(player.position);
     }
 }
