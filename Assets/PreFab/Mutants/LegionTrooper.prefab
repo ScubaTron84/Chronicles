@@ -20,7 +20,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8914563596849480377
 Transform:
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d331fc1f9863f448bc59998971825d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
+  enemyAgent: {fileID: 0}
 --- !u!195 &1972942763877176338
 NavMeshAgent:
   m_ObjectHideFlags: 0
