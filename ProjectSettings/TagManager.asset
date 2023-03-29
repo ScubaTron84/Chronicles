@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Ground
+  - Wall
   - obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - GroundLayer
   - Player
   - Walls
-  - 
+  - BadGuys
   - 
   - 
   - 

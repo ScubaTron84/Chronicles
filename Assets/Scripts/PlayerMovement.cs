@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ONLY USED FOR KEYBOARD NAVIGATION GAMES
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
     public float forwardForce;
     public float sideWaysForce;
+
     // Start is called before the first frame update
     void Start()
     {
 
     }
-
+    /// <summary>
+    /// The thought here was to replace the nav mesh with simple arrow direction movement.  
+    /// Limiting the player to one title at a time until out of momment actions.
+    /// </summary>
     // Update is called once per frame
     void Update()
     {
