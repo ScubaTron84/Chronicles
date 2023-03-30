@@ -61,7 +61,6 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\LevelCompeteScript.cs" />
-    <Compile Include="Assets\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\MovingObstaclesScript.cs" />
     <Compile Include="Assets\Scripts\FollowPlayerScript.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
