@@ -6,7 +6,7 @@ using UnityEngine;
 public class MovingObstaclesScript : MonoBehaviour
 {
     public float Speed = .2f;
-    public float Strength = 9f;
+    public float Strength = 1f;
 
     private float _randomOffset;
 

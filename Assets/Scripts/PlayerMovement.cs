@@ -7,14 +7,17 @@ using UnityEngine;
 /// </summary>
 public class PlayerMovement : MonoBehaviour
 {
+    private Transform _tranformer;
     public Rigidbody rb;
+    private float speed = 20f;
     public float forwardForce;
     public float sideWaysForce;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _tranformer = GetComponent<Transform>();
+        rb = GetComponent<Rigidbody>();
     }
     /// <summary>
     /// The thought here was to replace the nav mesh with simple arrow direction movement.  
@@ -28,29 +31,28 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //move foward automatically
-        rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-        
         if (Input.GetKey("d"))
         {
-            rb.AddForce(sideWaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            _tranformer.Translate(Vector3.right * Time.deltaTime * speed * forwardForce);
+                //(sideWaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if (Input.GetKey("a"))
+        else if (Input.GetKey("a"))
         {
-            rb.AddForce(-sideWaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            _tranformer.Translate(Vector3.left * Time.deltaTime * speed * forwardForce);
         }
-        //if (Input.GetKey("w"))
-        //{
-        //    rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-        //}
-        //if (Input.GetKey("s"))
-        //{
-        //    rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
-        //}
+        else if (Input.GetKey("w"))
+        {
+            _tranformer.Translate(Vector3.forward * Time.deltaTime * speed * forwardForce);
+        }
+        else if (Input.GetKey("s"))
+        {
+            _tranformer.Translate(Vector3.back * Time.deltaTime * speed * forwardForce);
+        }
 
         if(rb.position.y < 0f)
         {
             FindObjectOfType<GameManagerEngine>().EndGame();
         }
+
     }
 }
